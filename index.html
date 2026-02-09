@@ -100,9 +100,13 @@
       color: #eee;
     }
 
+    .btn-area{
+      margin-top: 18px;
+    }
+
     .btn {
       display: inline-block;
-      margin-top: 18px;
+      margin-top: 12px;
       padding: 14px 26px;
       background: #ff6a00;
       color: #000;
@@ -118,7 +122,7 @@
 
     .btn2 {
       display: inline-block;
-      margin-top: 18px;
+      margin-top: 12px;
       margin-left: 10px;
       padding: 14px 26px;
       background: #111;
@@ -132,6 +136,26 @@
 
     .btn2:hover {
       background: #ff6a00;
+      color: #000;
+    }
+
+    .btn-call {
+      display: inline-block;
+      margin-top: 12px;
+      margin-left: 10px;
+      padding: 14px 26px;
+      background: #ffffff;
+      color: #000;
+      font-weight: 900;
+      border-radius: 12px;
+      text-decoration: none;
+      transition: 0.2s;
+      border: 1px solid #ffffff;
+    }
+
+    .btn-call:hover {
+      background: #ff6a00;
+      border-color: #ff6a00;
       color: #000;
     }
 
@@ -178,14 +202,43 @@
       font-size: 15px;
     }
 
-    .store-box .line{
-      margin: 14px 0;
-      height: 1px;
-      background: #222;
+    .store-btns{
+      margin-top: 14px;
     }
 
-    .store-box a.tel{
+    .store-btns a{
+      display: inline-block;
+      margin-top: 10px;
+      margin-right: 10px;
+      padding: 12px 20px;
+      border-radius: 12px;
+      font-weight: 900;
+      text-decoration: none;
+      transition: 0.2s;
+    }
+
+    .store-btns .call{
+      background: #ff6a00;
+      color: #000;
+    }
+
+    .store-btns .call:hover{
+      background: #ff8a2a;
+    }
+
+    .store-btns .map{
+      background: #111;
       color: #ff6a00;
+      border: 1px solid #ff6a00;
+    }
+
+    .store-btns .map:hover{
+      background: #ff6a00;
+      color: #000;
+    }
+
+    .tel{
+      color:#ff6a00;
       font-weight: 900;
       text-decoration: none;
     }
@@ -267,7 +320,12 @@
       header h1 { font-size: 36px; }
       .hero h2 { font-size: 34px; }
       .hero { padding: 70px 16px; }
-      .btn2 { margin-left: 0; display:block; }
+
+      .btn2, .btn-call {
+        margin-left: 0;
+        display:block;
+      }
+
       .form-wrap iframe { height: 1850px; }
     }
   </style>
@@ -296,8 +354,11 @@
       APIOパーツ取扱、車検対応カスタムまでお任せください。
     </p>
 
-    <a class="btn" href="#contact">予約・お問い合わせ</a>
-    <a class="btn2" href="https://www.instagram.com/m_base.aomori/" target="_blank">Instagramを見る</a>
+    <div class="btn-area">
+      <a class="btn" href="#contact">予約・お問い合わせ</a>
+      <a class="btn2" href="https://www.instagram.com/m_base.aomori/" target="_blank">Instagramを見る</a>
+      <a class="btn-call" href="tel:0178380672">📞 電話する</a>
+    </div>
   </div>
 </div>
 
@@ -316,6 +377,11 @@
       <b>営業時間：</b>10:00〜18:00<br>
       <b>定休日：</b>水曜日
     </p>
+
+    <div class="store-btns">
+      <a class="call" href="tel:0178380672">📞 電話する</a>
+      <a class="map" href="https://www.google.com/maps?q=%E9%9D%92%E6%A3%AE%E7%9C%8C%E5%85%AB%E6%88%B8%E5%B8%82%E7%99%BD%E9%8A%80%E7%94%BA%E4%B8%89%E5%B3%B6%E4%B8%8B79-111" target="_blank">🗺 地図を見る</a>
+    </div>
   </div>
 </section>
 
@@ -366,6 +432,11 @@
       営業時間：10:00〜18:00（定休日：水曜日）<br>
       電話：<a class="tel" href="tel:0178380672">0178-38-0672</a>
     </p>
+
+    <div class="store-btns">
+      <a class="call" href="tel:0178380672">📞 電話する</a>
+      <a class="map" href="https://www.google.com/maps?q=%E9%9D%92%E6%A3%AE%E7%9C%8C%E5%85%AB%E6%88%B8%E5%B8%82%E7%99%BD%E9%8A%80%E7%94%BA%E4%B8%89%E5%B3%B6%E4%B8%8B79-111" target="_blank">🗺 地図を見る</a>
+    </div>
   </div>
 
   <iframe
@@ -384,6 +455,10 @@
 
   <a class="btn" href="https://www.instagram.com/m_base.aomori/" target="_blank">
     Instagramで問い合わせる
+  </a>
+
+  <a class="btn2" href="tel:0178380672">
+    📞 電話する
   </a>
 
   <div class="form-wrap">
